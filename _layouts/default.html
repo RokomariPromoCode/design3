@@ -1,0 +1,51 @@
+---
+layout: nil
+---
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/Db+..."
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- Global Header -->
+  {% include header.html %}
+
+  <!-- Main Content -->
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  <!-- Global Footer -->
+  {% include footer.html %}
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/8801234567890"
+     class="whatsapp-float"
+     aria-label="Chat on WhatsApp"
+     target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- All _data as JSON for JS to use -->
+  <script id="affiliate-data" type="application/json">
+    {{ site.data | jsonify }}
+  </script>
+
+  <!-- Main JS -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

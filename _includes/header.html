@@ -1,0 +1,45 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="logo-area">
+      <span class="logo-mark">RP</span>
+      <div class="logo-text">
+        <span class="logo-title">Rokomari Promo Code</span>
+        <span class="logo-sub">আজকের কুপন ও ডিসকাউন্ট অফার</span>
+      </div>
+    </a>
+
+    <!-- Search -->
+    <form class="header-search" action="{{ '/search' | relative_url }}" method="get" autocomplete="off">
+      <input
+        type="search"
+        name="q"
+        id="global-search-input"
+        placeholder="বই, ক্যাটাগরি বা প্রমো কোড সার্চ করুন..."
+        aria-label="Search products"
+      >
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+
+      <!-- Live suggestions -->
+      <div class="search-suggestions" id="search-suggestions"></div>
+    </form>
+
+    <!-- Nav -->
+    <nav class="main-nav">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/books' | relative_url }}">Books</a></li>
+        <li><a href="{{ '/electronics' | relative_url }}">Electronics</a></li>
+        <li><a href="{{ '/foods' | relative_url }}">Foods</a></li>
+        <li><a href="{{ '/gorer-bazar' | relative_url }}">Gorer Bazar</a></li>
+        <li><a href="{{ '/kids-toys' | relative_url }}">Kids Toys</a></li>
+        <li><a href="{{ '/baby-products' | relative_url }}">Baby Products</a></li>
+        <li><a href="{{ '/beauty' | relative_url }}">Beauty</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

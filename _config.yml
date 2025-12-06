@@ -1,0 +1,13 @@
+title: "Rokomari Promo Affiliate"
+baseurl: "design3"
+url: "https://rokomaripromocode.com/design3"
+
+markdown: kramdown
+theme: null
+
+collections:
+  posts:
+    output: true
+
+# So GitHub Pages builds Jekyll
+plugins: []
